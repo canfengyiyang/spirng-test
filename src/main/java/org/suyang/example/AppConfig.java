@@ -6,7 +6,7 @@ import org.springframework.context.annotation.ComponentScan;
 import org.springframework.context.annotation.Configuration;
 import org.suyang.example.servcie.OrderService;
 
-@ComponentScan("org.suyang.example")
+//@ComponentScan("org.suyang.example")
 //@Configuration
 public class AppConfig {
 

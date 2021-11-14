@@ -2,7 +2,6 @@ package org.suyang.example.test;
 
 import org.springframework.context.support.ClassPathXmlApplicationContext;
 import org.suyang.example.servcie.OrderService;
-import org.suyang.example.servcie.UserService;
 
 public class Test {
 

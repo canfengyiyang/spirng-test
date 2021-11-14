@@ -1,5 +1,8 @@
 package org.suyang.example.servcie;
 
+import org.springframework.stereotype.Service;
+
+@Service
 public class OrderService {
     public void init() {
         System.out.println("init");

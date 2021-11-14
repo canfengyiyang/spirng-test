@@ -1,47 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<beans default-init-method="init" xmlns="http://www.springframework.org/schema/beans"
+<beans xmlns="http://www.springframework.org/schema/beans"
        xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
-       xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd">
-    <!--
-        定义bean
-        class属性标识类的全限定名
-        names属性标识bean的名称，可以起多个
-    -->
+       xmlns:context="http://www.springframework.org/schema/context"
+       xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd http://www.springframework.org/schema/context https://www.springframework.org/schema/context/spring-context.xsd">
 
-    <!--也可以单独在外面为定义的bean起别名-->
-    <alias name="orderService" alias="order4"/>
-
-
-    <!--
-        基于setter方法的依赖注入
-        <property>中的name属性是根据类中的set方法的名称来的，比如setName(String name) ==》name = "name"
-    -->
-    <!--    <bean class="org.suyang.example.entity.User" name="user">-->
-    <!--        <property name="age" value="18"/>-->
-    <!--        <property name="name" value="丁仪"/>-->
-    <!--    </bean>-->
-
-    <!--
-       基于构造函数的依赖注入
-         1. 将会调用自定义构造函数来实例化对象，就不会调用默认的无参构造函数
-         2. name是根据构造函数的参数名来的， 比如：User(String idxx) ‐> name="idxx"
-         3. name属性可以省略 但是要注意参数的位置
-         4. 如果非要把位置错开 可以使用 name 或者 index 或者 type
-         5. index 是下标 从0开始
-         6. type 在位置错开情况下只能在类型不一样的时候指定才有明显效果
-    -->
-    <bean class="org.suyang.example.entity.User" name="user">
-        <constructor-arg name="age" value="18"/>
-        <constructor-arg name="name" value="丁仪"/>
-    </bean>
-
-    <bean class="org.suyang.example.servcie.impl.UserServiceImpl" name="userService1"/>
-
-    <bean class="org.suyang.example.servcie.impl.UserService2Impl" name="userService2"/>
-
-<!--    <bean class="org.suyang.example.servcie.OrderService" name="orderService" autowire="constructor"/>-->
-
-    <bean class="org.suyang.example.servcie.OrderService" name="orderService" destroy-method="destroy"/>
-
-
+    <context:component-scan base-package="org.suyang.example"/>
 </beans>
