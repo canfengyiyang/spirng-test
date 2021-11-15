@@ -6,12 +6,15 @@ import org.springframework.context.annotation.ComponentScan;
 import org.springframework.context.annotation.Configuration;
 import org.suyang.example.servcie.OrderService;
 
-//@ComponentScan("org.suyang.example")
-//@Configuration
+@ComponentScan("org.suyang.example")
+@Configuration
 public class AppConfig {
 
-//    @Bean
-//    public OrderService getOrderService() {
-//        return new OrderService();
-//    }
+
+    @Bean
+    public WorkService getW() {
+
+        System.out.println("创建WorkService");
+        return new WorkService();
+    }
 }

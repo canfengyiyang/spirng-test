@@ -1,9 +1,24 @@
 package org.suyang.example.servcie;
 
+import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
+import org.suyang.example.dao.UserDao;
 
 @Service
 public class OrderService {
+
+
+    private UserDao userDao;
+
+    @Autowired
+    private void setUserDao(UserDao userDao) {
+
+        this.userDao = userDao;
+
+        System.out.println("调用 方法：：：：：：：：：：：");
+    }
+
+
     public void init() {
         System.out.println("init");
     }
