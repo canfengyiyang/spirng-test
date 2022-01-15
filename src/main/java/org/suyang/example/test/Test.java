@@ -1,7 +1,6 @@
 package org.suyang.example.test;
 
 import org.springframework.context.support.ClassPathXmlApplicationContext;
-import org.suyang.example.servcie.OrderService;
 
 public class Test {
 
@@ -15,7 +14,7 @@ public class Test {
 //        Object user = context.getBean("user2");
 //        System.out.println(user);
 
-        OrderService bean = context.getBean(OrderService.class);
+//        OrderService bean = context.getBean(OrderService.class);
         context.registerShutdownHook();
 //        bean.test();
     }

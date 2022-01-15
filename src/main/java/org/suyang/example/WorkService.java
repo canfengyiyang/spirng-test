@@ -1,7 +1,7 @@
 package org.suyang.example;
 
-import org.springframework.stereotype.Service;
-
 //@Service
+//@Import(OrderService.class)
+//@Configuration
 public class WorkService {
 }

@@ -5,7 +5,6 @@ import org.springframework.context.annotation.AnnotationConfigApplicationContext
 import org.suyang.example.AppConfig;
 import org.suyang.example.WorkService;
 import org.suyang.example.dao.UserDao;
-import org.suyang.example.servcie.OrderService;
 
 public class AnnotationConfigTest {
 
@@ -16,13 +15,23 @@ public class AnnotationConfigTest {
 //        System.out.println(orderService);
 
 
-        ApplicationContext context = new AnnotationConfigApplicationContext(AppConfig.class);
-        OrderService orderService = context.getBean(OrderService.class);
-        System.out.println(orderService);
+//        ApplicationContext context = new AnnotationConfigApplicationContext(AppConfig.class);
+//        OrderService orderService = context.getBean(OrderService.class);
+//        System.out.println(orderService);
 
-        WorkService workService = context.getBean(WorkService.class);
-        System.out.println(workService);
-        WorkService workService1 = context.getBean(WorkService.class);
-        System.out.println(workService1);
+//        WorkService workService = context.getBean(WorkService.class);
+//        System.out.println(workService);
+//
+//        AppConfig appConfig = context.getBean(AppConfig.class);
+//        System.out.println(appConfig);
+//
+//        UserDao userDao = context.getBean(UserDao.class);
+//        System.out.println(userDao);
+
+
+//        WorkService workService = context.getBean(WorkService.class);
+//        System.out.println(workService);
+//        WorkService workService1 = context.getBean(WorkService.class);
+//        System.out.println(workService1);
     }
 }
