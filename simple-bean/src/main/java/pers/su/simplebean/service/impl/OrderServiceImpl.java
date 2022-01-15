@@ -2,7 +2,7 @@ package pers.su.simplebean.service.impl;
 
 import org.springframework.stereotype.Service;
 import pers.su.simplebean.service.OrderService;
-import pers.su.simplebean.service.entity.OrderDO;
+import pers.su.simplebean.entity.OrderDO;
 
 
 import java.util.ArrayList;

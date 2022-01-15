@@ -2,7 +2,7 @@ package pers.su.springaopschema.test;
 
 import org.springframework.context.support.ClassPathXmlApplicationContext;
 import pers.su.simplebean.service.OrderService;
-import pers.su.simplebean.service.entity.OrderDO;
+import pers.su.simplebean.entity.OrderDO;
 
 import java.util.List;
 

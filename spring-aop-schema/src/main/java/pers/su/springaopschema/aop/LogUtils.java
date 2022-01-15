@@ -1,7 +1,6 @@
 package pers.su.springaopschema.aop;
 
 import org.aspectj.lang.ProceedingJoinPoint;
-import org.springframework.stereotype.Component;
 
 public class LogUtils {
 

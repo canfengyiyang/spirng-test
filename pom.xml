@@ -39,8 +39,6 @@
             <artifactId>spring-aspects</artifactId>
             <version>5.2.7.RELEASE</version>
         </dependency>
-
-
     </dependencies>
 
 </project>

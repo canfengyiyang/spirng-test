@@ -1,4 +1,4 @@
-package pers.su.simplebean.service.entity;
+package pers.su.simplebean.entity;
 
 public class OrderDO {
 

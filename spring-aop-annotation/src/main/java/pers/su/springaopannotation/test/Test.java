@@ -2,7 +2,7 @@ package pers.su.springaopannotation.test;
 
 import org.springframework.context.annotation.AnnotationConfigApplicationContext;
 import pers.su.simplebean.service.OrderService;
-import pers.su.simplebean.service.entity.OrderDO;
+import pers.su.simplebean.entity.OrderDO;
 import pers.su.springaopannotation.AppConfig;
 
 import java.util.List;

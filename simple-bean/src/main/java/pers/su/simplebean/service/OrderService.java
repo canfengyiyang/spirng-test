@@ -1,7 +1,7 @@
 package pers.su.simplebean.service;
 
 
-import pers.su.simplebean.service.entity.OrderDO;
+import pers.su.simplebean.entity.OrderDO;
 
 import java.util.List;
 
